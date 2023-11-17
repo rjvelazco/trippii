@@ -35,10 +35,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-family);
 }
 
 html {
+    font-family: var(--font-family);
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -142,7 +142,7 @@ body {
     line-height: 18px;
     padding: var(--spacing-3);
     text-align: center;
-    height: 4.15rem;
+    height: 3rem;
 }
 
 .layout__form button {
@@ -155,7 +155,7 @@ body {
     font-size: var(--spacing-3);
     font-weight: 200;
     padding: var(--spacing-3) 0;
-    height: 4.15rem;
+    height: 3rem;
 }
 
 .layout__form .sign-up__email {
