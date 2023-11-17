@@ -29,16 +29,18 @@
     --font-size-slogan-line-height-mobile: 56px;
     --font-size-slogan: 82px;
     --font-size-slogan-line-height: 76px;
+
+    --input-box-shadow: 0 0 8px rgba(178, 155, 239, 0.8);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-family);
 }
 
 html {
-    font-family: var(--font-family);
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -135,7 +137,7 @@ body {
 .layout__form input {
     align-self: stretch;
     border-radius: var(--spacing-2);
-    border: none;
+    border: 1px solid var(--primary-color);
     color: rgba(0, 0, 0, 0.50);
     font-size: var(--spacing-3);
     font-weight: 200;
@@ -143,10 +145,19 @@ body {
     padding: var(--spacing-3);
     text-align: center;
     height: 3rem;
+    outline: none;
+}
+
+.layout__form input:focus {
+    border: 1px solid var(--secondary-color-light);
+    box-shadow: var(--input-box-shadow);
 }
 
 .layout__form button {
     align-self: stretch;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     background: var(--secondary-color);
     border-radius: var(--spacing-2);
     border: none;
@@ -215,10 +226,8 @@ body {
     }
 
     .layout__form button {
-        align-items: flex-start;
-        display: flex;
         gap: var(--spacing-2);
-        padding: var(--spacing-5) var(--spacing-8);
+        padding: var(--spacing-2) var(--spacing-8);
     }
 
     .content__email {
