@@ -8,7 +8,9 @@
     --secondary-color: #60557F;
     --overlay-color: rgba(0, 3, 12, .6);
     --input-color: rgba(0, 0, 0, 0.50);
+    
 
+    --spacing-1: 0.25rem;
     --spacing-2: 0.625rem;
     --spacing-3: 1rem;
     --spacing-4: 1.25rem;
@@ -21,9 +23,9 @@
     --body-padding: 2.125rem;
 
     --font-size-xs: 0.75rem;
-    --font-size-sm: 18px;
+    --font-size-sm: 0.875rem;
     --font-size-md: 1rem;
-    --font-size-xl: 20px;
+    --font-size-xl: 1.25rem;
 
     --font-size-slogan-mobile: 48px;
     --font-size-slogan-line-height-mobile: 56px;
@@ -172,7 +174,6 @@ body {
 .layout__form .sign-up__email {
     display: inline;
 }
-
 
 @media (min-width: 640px) {
     .layout {

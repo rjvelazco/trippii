@@ -9,6 +9,8 @@
     <meta name="keywords" content="Travel, Rediscover, Togetherness, iOS, Android">
     <meta name="author" content="Trippii">
     <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link type="text/css" rel="stylesheet" href="./css/pop-up.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -36,17 +38,40 @@
             </span>
         </main>
 
-
         <form class="layout__form" id="form-email">
             <label for="email" class="form__label">
                 Enter your email to request an early invitation!
             </label>
-            <input type="email" id="email" name="email" class="form__input" placeholder="Enter your email">
+            <input required type="email" id="email" name="email" class="form__input" placeholder="Enter your email">
             <button type="submit" class="form__button" aria-label="Notify Me">Notify Me</button>
         </form>
     </div>
 
-    <script src="./js/script.js"></script>
+    <div class="pop-up hidden" id="pop-up">
+        <button class="close-button" id="pop-up-close">
+            <span class="material-symbols-outlined" style="font-size: 20px;">
+                close
+            </span>
+        </button>
+
+        <div class="icon">
+            <span class="material-symbols-outlined" style="font-size: 80px;" id="pop-up-icon">
+            </span>
+        </div>
+
+        <span class="pop-up__title" id="pop-up-title"></span>
+        <div class="pop-up__content" id="pop-up-message">
+            
+        </div>
+
+        <div class="pop-up__footer">
+            <button class="button">Twitter</button>
+            <button class="button">LinkedIn</button>
+        </div>
+
+    </div>
+
+    <script src="./js/form.js"></script>
 </body>
 
 </html>
