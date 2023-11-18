@@ -24,7 +24,7 @@
     max-width:350px;
     padding: var(--spacing-3);
     position: fixed;
-    left: 50%;
+    right: 50%;
     text-align: center;
     top: 9rem;
     transform: translateX(200%);
