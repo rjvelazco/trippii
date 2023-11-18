@@ -15,10 +15,18 @@ const popErrorProps = {
 window.addEventListener("load", function () {
     const form = document.querySelector("#form-email");
     const popUp = document.querySelector("#pop-up");
+    const popUpOverlay = document.querySelector("#pop-up-overlay");
     const popUpClose = document.querySelector("#pop-up-close");
     const popUpTitle = popUp.querySelector("#pop-up-title");
     const popUpMessage = popUp.querySelector("#pop-up-message");
     const popUpIcon = popUp.querySelector("#pop-up-icon");
+
+    popUpOverlay.addEventListener('click', (event)=> {
+        if (event.target === popUpOverlay) {
+            popUp.classList.add('hidden');
+            popUpOverlay.classList.add('hidden');
+        }
+    });
 
     const showPopUp = ({ title, message, icon }) => {
         popUpTitle.textContent = title;
@@ -26,10 +34,14 @@ window.addEventListener("load", function () {
         popUpIcon.textContent = icon;
 
         popUp.classList.remove("hidden"); // Show the pop-up
+        popUpOverlay.classList.remove('hidden');
         setTimeout(() => hidePopUp(), 5000); // Hide the pop-up after 5 seconds
     };
 
-    const hidePopUp = () => popUp.classList.add("hidden");
+    const hidePopUp = () => {
+        popUp.classList.add('hidden');
+        popUpOverlay.classList.add('hidden');
+    };
 
     popUpClose.addEventListener("click", () => hidePopUp());
 
