@@ -23,6 +23,8 @@ window.addEventListener("load", function () {
     const popUpMessage = document.querySelector("#pop-up-message");
     const popUpIcon = document.querySelector("#pop-up-icon");
 
+    let popUpTimeoutId;
+
     /* Functions */
     /**
      * Show the pop-up with the given properties
@@ -36,7 +38,7 @@ window.addEventListener("load", function () {
 
         popUp.classList.remove("hidden"); // Show the pop-up
         popUpOverlay.classList.remove('hidden');
-        setTimeout(() => hidePopUp(), 5000); // Hide the pop-up after 5 seconds
+        popUpTimeoutId = setTimeout(() => hidePopUp(), 5000); // Hide the pop-up after 5 seconds
     };
 
     /**
@@ -46,6 +48,9 @@ window.addEventListener("load", function () {
     const hidePopUp = () => {
         popUp.classList.add('hidden');
         popUpOverlay.classList.add('hidden');
+        if(popUpTimeoutId) {
+            clearTimeout(popUpTimeoutId);
+        }
     };
 
     const hidePopUpOverlay = (event)=> {
