@@ -29,7 +29,7 @@
     top: 9rem;
     transform: translateX(200%);
     transition: transform 0.5s; 
-    width: 100%;
+    width: 80%;
     z-index: 2;
 }
 
@@ -50,9 +50,10 @@
 }
 
 .pop-up .pop-up__title {
-    font-size: var(--font-size-xl);
     color: #141b22;
+    font-size: var(--font-size-xl);
     line-height: 1.25;
+    padding: 0 var(--spacing-3);
 }
 
 .pop-up .pop-up__content {
