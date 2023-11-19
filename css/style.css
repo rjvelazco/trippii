@@ -61,12 +61,13 @@ html::before {
     position: absolute;
     right: 0;
     top: 0;
+    height: 100dvh;
 }
 
 body {
     /* This is important to make it stand out from the overlay */
     color: var(--primary-color);
-    height: 100vh;
+    height: 100dvh;
     padding: var(--body-padding);
     position: relative;
 }
