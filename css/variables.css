@@ -1,0 +1,33 @@
+:root {
+    --font-family: 'Poppins', 'Dancing Script', system-ui, -apple-system, sans-serif;
+    --primary-color: #ffffff;
+    --secondary-color: #60557F;
+    --overlay-color: rgba(0, 3, 12, .6);
+    --input-color: rgba(0, 0, 0, 0.50);
+    
+
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.625rem;
+    --spacing-3: 1rem;
+    --spacing-4: 1.25rem;
+    --spacing-5: 1.5rem;
+    --spacing-6: 2rem;
+    --spacing-8: 2.5rem;
+    --spacing-9: 3rem;
+    --spacing-10: 3.5rem;
+
+    --body-padding: 2.125rem;
+
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-xl: 1.25rem;
+
+    --font-size-slogan-mobile: 48px;
+    --font-size-slogan-line-height-mobile: 56px;
+    --font-size-slogan: 82px;
+    --font-size-slogan-line-height: 76px;
+
+    --input-box-shadow: 0 0 8px rgba(178, 155, 239, 0.8);
+    --pop-up-shadow: 0 8px 16px rgba(20, 21, 26, 0.08), 0 0 4px rgba(20, 21, 26, 0.04);
+}

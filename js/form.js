@@ -3,7 +3,7 @@
 /* Pop-up properties */
 const popSucessProps = {
     title: "You are on the waitlist",
-    message: "Thanks for joining. We will notify you as soon as the product becomes available. Follow our social channels to stay tuned!",
+    message: "Thanks for joining Trippii. Our team will notify you as soon as the product is available. Follow us on Instagram to stay tuned!",
     icon: `check_circle`,
 }
 
@@ -18,7 +18,6 @@ window.addEventListener("load", function () {
     const form = document.querySelector("#form-email");
     const popUp = document.querySelector("#pop-up");
     const popUpOverlay = document.querySelector("#pop-up-overlay");
-    const popUpClose = document.querySelector("#pop-up-close");
     const popUpTitle = document.querySelector("#pop-up-title");
     const popUpMessage = document.querySelector("#pop-up-message");
     const popUpIcon = document.querySelector("#pop-up-icon");
@@ -97,5 +96,4 @@ window.addEventListener("load", function () {
     /* Event Listener */
     form.addEventListener("submit", handleFormSubmit); // Handle the form submission
     popUpOverlay.addEventListener('click', hidePopUpOverlay); // Hide the pop-up when the user clicks on the overlay
-    popUpClose.addEventListener("click", hidePopUp); // Hide the pop-up when the user clicks on the close button
 });

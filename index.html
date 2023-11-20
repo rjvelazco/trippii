@@ -8,9 +8,11 @@
     <meta name="description" content="Trippii: Rethink Travel. Rediscover Togetherness. Connect with your next travel buddies. Coming to iOS & Android.">
     <meta name="keywords" content="Travel, Rediscover, Togetherness, iOS, Android">
     <meta name="author" content="Trippii">
+    <link type="text/css" rel="stylesheet" href="./css/variables.css">
     <link type="text/css" rel="stylesheet" href="./css/style.css">
     <link type="text/css" rel="stylesheet" href="./css/pop-up.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 
 <body>
@@ -47,31 +49,24 @@
         </form>
     </div>
 
-    <div class="pop-up hidden" id="pop-up">
-        <button class="close-button" id="pop-up-close">
-            <span class="material-symbols-outlined" style="font-size: 20px;">
-                close
-            </span>
-        </button>
-
-        <div class="icon">
-            <span class="material-symbols-outlined" style="font-size: 80px;" id="pop-up-icon">
-                check_circle
-            </span>
-        </div>
-
-        <span class="pop-up__title" id="pop-up-title">You are on the waitlist</span>
-        <div class="pop-up__content" id="pop-up-message">
-            Thanks for joining. We will notify you as soon as the product becomes available. Follow our social channels to stay tuned!
-        </div>
-
-        <div class="pop-up__footer">
-            <button class="button">Twitter</button>
-            <button class="button">LinkedIn</button>
-        </div>
-
-    </div>
     <div class="pop-up__overlay hidden" id="pop-up-overlay">
+        <div class="pop-up hidden" id="pop-up">
+            <div class="icon">
+                <span class="material-symbols-outlined" style="font-size: 80px; color: black;" id="pop-up-icon">
+                    check_circle
+                </span>
+            </div>
+            <div class="pop-up__message">
+                <span class="pop-up__title" id="pop-up-title">You are on the waitlist</span>
+                <div class="pop-up__content" id="pop-up-message">
+                    Thanks for joining Trippii. Our team will notify you as soon as the product is available. Follow us on Instagram to stay tuned!
+                </div>    
+            </div>
+            <div class="pop-up__footer">
+                <a href="#" class="button">Instagram</a>
+            </div>
+    
+        </div>
     </div>
 
     <script src="./js/form.js"></script>

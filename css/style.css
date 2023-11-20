@@ -2,39 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
 
-:root {
-    --font-family: 'Poppins', 'Dancing Script', system-ui, -apple-system, sans-serif;
-    --primary-color: #ffffff;
-    --secondary-color: #60557F;
-    --overlay-color: rgba(0, 3, 12, .6);
-    --input-color: rgba(0, 0, 0, 0.50);
-    
-
-    --spacing-1: 0.25rem;
-    --spacing-2: 0.625rem;
-    --spacing-3: 1rem;
-    --spacing-4: 1.25rem;
-    --spacing-5: 1.5rem;
-    --spacing-6: 2rem;
-    --spacing-8: 2.5rem;
-    --spacing-9: 3rem;
-    --spacing-10: 3.5rem;
-
-    --body-padding: 2.125rem;
-
-    --font-size-xs: 0.75rem;
-    --font-size-sm: 0.875rem;
-    --font-size-md: 1rem;
-    --font-size-xl: 1.25rem;
-
-    --font-size-slogan-mobile: 48px;
-    --font-size-slogan-line-height-mobile: 56px;
-    --font-size-slogan: 82px;
-    --font-size-slogan-line-height: 76px;
-
-    --input-box-shadow: 0 0 8px rgba(178, 155, 239, 0.8);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -43,11 +10,11 @@
 }
 
 html {
+    background: url(../assets/background.png) no-repeat fixed;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
-    background: url(../assets/background.png) no-repeat fixed;
 }
 
 /* Overlay */
