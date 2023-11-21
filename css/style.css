@@ -40,6 +40,7 @@ body {
 }
 
 .layout,
+.layout__body,
 .layout__content,
 .layout__form {
     align-items: center;
@@ -53,10 +54,16 @@ body {
     justify-content: center;
     padding: var(--spacing-9) 0;
     width: 100%;
+    /* gap: 92px; */
 }
 
 .layout__header {
     justify-content: center;
+}
+
+.layout__body {
+    flex: 1;
+    /* gap: 64px; */
 }
 
 .layout__content {
@@ -86,6 +93,12 @@ body {
     font-size: var(--font-size-xs);
     justify-content: center;
     line-height: var(--spacing-5);
+}
+
+.content_message,
+.message__text {
+    line-height: 33px;
+    /* 165% */
 }
 
 .content__email {
@@ -153,7 +166,16 @@ body {
         padding: var(--spacing-9);
     }
 
+    .layout {
+        gap: 92px;
+    }
+
+    .layout__body {
+        gap: 64px;
+    }
+
     .layout__content {
+        flex: unset;
         width: 100%;
         max-width: 48rem;
     }

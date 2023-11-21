@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trippii - Rethink Travel. Rediscover Togetherness.</title>
-    <meta name="description" content="Trippii: Rethink Travel. Rediscover Togetherness. Connect with your next travel buddies. Coming to iOS & Android.">
+    <meta name="description"
+        content="Trippii: Rethink Travel. Rediscover Togetherness. Connect with your next travel buddies. Coming to iOS & Android.">
     <meta name="keywords" content="Travel, Rediscover, Togetherness, iOS, Android">
     <meta name="author" content="Trippii">
     <link type="text/css" rel="stylesheet" href="./css/variables.css">
     <link type="text/css" rel="stylesheet" href="./css/style.css">
     <link type="text/css" rel="stylesheet" href="./css/pop-up.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 
@@ -23,30 +25,32 @@
             <img class="layout__logo" src="./assets/logo.png" alt="Trippii - Logo">
         </header>
 
-        <main class="layout__content">
-            <h1 class="content__slogan">Rethink Travel. Rediscover Togetherness.</h1>
+        <main class="layout__body">
+            <div class="layout__content">
+                <h1 class="content__slogan">Rethink Travel. Rediscover Togetherness.</h1>
 
-            <div class="content__message">
-                <span class="message__text">
-                    Connect with your next travel buddies.
-                </span>
-                <span class="message__text">
-                    Coming to iOS & Android.
+                <div class="content__message">
+                    <span class="message__text">
+                        Connect with your next travel buddies.
+                    </span>
+                    <span class="message__text">
+                        Coming to iOS & Android.
+                    </span>
+                </div>
+
+                <span class="content__email">
+                    Enter your email to request an early invitation!
                 </span>
             </div>
 
-            <span class="content__email">
-                Enter your email to request an early invitation!
-            </span>
+            <form class="layout__form" id="form-email">
+                <label for="email" class="form__label">
+                    Enter your email to request an early invitation!
+                </label>
+                <input required type="email" id="email" name="email" class="form__input" placeholder="Enter your email">
+                <button type="submit" class="form__button" aria-label="Notify Me">Notify Me</button>
+            </form>
         </main>
-
-        <form class="layout__form" id="form-email">
-            <label for="email" class="form__label">
-                Enter your email to request an early invitation!
-            </label>
-            <input required type="email" id="email" name="email" class="form__input" placeholder="Enter your email">
-            <button type="submit" class="form__button" aria-label="Notify Me">Notify Me</button>
-        </form>
     </div>
 
     <div class="pop-up__overlay hidden" id="pop-up-overlay">
@@ -59,13 +63,14 @@
             <div class="pop-up__message">
                 <span class="pop-up__title" id="pop-up-title">You are on the waitlist</span>
                 <div class="pop-up__content" id="pop-up-message">
-                    Thanks for joining Trippii. Our team will notify you as soon as the product is available. Follow us on Instagram to stay tuned!
-                </div>    
+                    Thanks for joining Trippii. Our team will notify you as soon as the product is available. Follow us
+                    on Instagram to stay tuned!
+                </div>
             </div>
             <div class="pop-up__footer">
                 <a href="#" class="button">Instagram</a>
             </div>
-    
+
         </div>
     </div>
 
