@@ -1,0 +1,96 @@
+/* Dancing Script & Poppins - Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+html {
+    background: #60557F;
+}
+
+
+body {
+    /* This is important to make it stand out from the overlay */
+    color: var(--primary-color);
+    height: 100dvh;
+    padding: var(--body-padding);
+    position: relative;
+}
+
+.layout {
+    gap: 4rem;
+}
+
+.layout,
+.layout__body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.layout {
+    height: 100%;
+    justify-content: center;
+    padding: var(--spacing-9) 0;
+    width: 100%;
+}
+
+.layout__header {
+    justify-content: center;
+}
+
+.layout__body {
+    gap: 2rem;
+    flex: 1;
+    text-align: center;
+}
+
+.content__message {
+    max-width: 43.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    font-weight: 300;
+}
+
+.content__title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+@media (min-width: 640px) {
+
+    .layout,
+    .layout__body{
+        gap: 2rem;
+    }
+
+    .layout {
+        padding: 0;
+        margin: auto;
+    }
+
+    body {
+        padding: var(--spacing-9);
+    }
+
+    .layout__header {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .layout__header .layout__logo {
+        padding: var(--spacing-5);
+    }
+}

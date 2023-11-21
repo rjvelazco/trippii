@@ -54,7 +54,6 @@ body {
     justify-content: center;
     padding: var(--spacing-9) 0;
     width: 100%;
-    /* gap: 92px; */
 }
 
 .layout__header {
@@ -63,7 +62,6 @@ body {
 
 .layout__body {
     flex: 1;
-    /* gap: 64px; */
 }
 
 .layout__content {
