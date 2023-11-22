@@ -127,7 +127,7 @@ body {
 
 .layout__form input {
     border: 1px solid var(--primary-color);
-    color: rgba(0, 0, 0, 0.50);
+    color: var(--input-color);
     line-height: 18px;
     text-align: center;
     outline: none;
