@@ -60,6 +60,10 @@ body {
     justify-content: center;
 }
 
+.layout__header .layout__logo {
+    width: 8.5rem;
+}
+
 .layout__body {
     flex: 1;
 }
@@ -96,7 +100,6 @@ body {
 .content_message,
 .message__text {
     line-height: 33px;
-    /* 165% */
 }
 
 .content__email {
@@ -223,5 +226,6 @@ body {
 
     .layout__header .layout__logo {
         padding: var(--spacing-5);
+        width: 13.5rem;
     }
 }

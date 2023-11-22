@@ -45,6 +45,10 @@ body {
     justify-content: center;
 }
 
+.layout__header .layout__logo {
+    width: 8.5rem;
+}
+
 .layout__body {
     gap: 2rem;
     flex: 1;
@@ -92,5 +96,6 @@ body {
 
     .layout__header .layout__logo {
         padding: var(--spacing-5);
+        width: 13.5rem;
     }
 }
