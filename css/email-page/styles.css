@@ -64,11 +64,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 11.25rem;
+    width: 100%;
     height: var(--spacing-8);
-    padding: var(--spacing-5) var(--spacing-10);
+    padding: var(--spacing-1) var(--spacing-4);
     border: none;
-    border-radius: var(--spacing-2);
+    border-radius: var(--spacing-4);
     background: var(--secondary-color);
     color: var(--primary-color);
     cursor: pointer;
