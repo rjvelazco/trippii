@@ -32,11 +32,10 @@ html::before {
 }
 
 body {
-    /* This is important to make it stand out from the overlay */
     color: var(--primary-color);
     height: 100dvh;
     padding: var(--spacing-10) var(--body-padding-x);
-    position: relative;
+    position: relative; /* This is important to make it stand out from the overlay */
 }
 
 .layout,
