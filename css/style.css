@@ -93,8 +93,10 @@ body {
     display: flex;
     flex-direction: column;
     font-size: var(--font-size-xs);
+    font-weight: 200;
     justify-content: center;
     line-height: var(--spacing-5);
+    text-align: center;
 }
 
 .content_message,
