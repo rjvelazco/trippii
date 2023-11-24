@@ -205,7 +205,6 @@ body {
     .layout__form {
         align-self: auto;
         flex-direction: row;
-        height: 4.25rem;
         max-width: 48rem;
         font-weight: 400;
     }
