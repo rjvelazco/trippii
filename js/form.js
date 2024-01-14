@@ -15,9 +15,13 @@ const popErrorProps = {
 
 // Wait for the fonts to load before showing the content
 // Avoids jumps in the UI when the fonts are applied
-document.fonts.onloadingdone = () => {
+Promise.all([
+    document.fonts.load('1em "Poppins"'),
+    document.fonts.load('1em "Dancing Script"')
+]).finally(() => {
     document.getElementById('body').style.visibility = 'visible';
-};
+});
+
 
 
 /* Elements Listener */
