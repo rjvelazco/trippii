@@ -13,7 +13,14 @@ const popErrorProps = {
     icon: `Cancel`
 }
 
+// Wait for the fonts to load before showing the content
+// Avoids jumps in the UI when the fonts are applied
+document.fonts.onloadingdone = () => {
+    document.getElementById('body').style.visibility = 'visible';
+};
+
 window.addEventListener("load", function () {
+
     /* Elements Listener */
     const form = document.querySelector("#form-email");
     const popUp = document.querySelector("#pop-up");
