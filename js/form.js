@@ -13,6 +13,12 @@ const popErrorProps = {
     icon: `Cancel`
 }
 
+const popNoCheck = {
+    title: "Agree to our terms of service",
+    message: "Plese check our <a href='/privacy-policy'>privacy policy and terms of service</a> to continue",
+    icon: `Cancel`
+}
+
 /* Elements Listener */
 const form = document.querySelector("#form-email");
 const popUp = document.querySelector("#pop-up");
@@ -29,9 +35,12 @@ let popUpTimeoutId;
  *
  * @param {*} { title, message, icon }
  */
-const showPopUp = ({ title, message, icon }) => {
+const showPopUp = ({ title, message, icon }, showInstram = true) => {
+    const instram = document.querySelector("#instagram-popup");
+    instram.style.display = showInstram ? "flex" : "none";
+
     popUpTitle.textContent = title;
-    popUpMessage.textContent = message;
+    popUpMessage.innerHTML = message;
     popUpIcon.textContent = icon;
 
     popUp.classList.remove("hidden"); // Show the pop-up
@@ -67,7 +76,13 @@ const handleFormSubmit = async (event) => {
     event.preventDefault();
 
     const emailInput = document.querySelector("#email");
+    const checkboxInput = document.querySelector("#terms");
     const email = emailInput.value;
+
+    if (!checkboxInput.checked) {
+        showPopUp(popNoCheck, false);
+        return;
+    }
 
     // Hide the pop-up immediately when the submit button is clicked
     hidePopUp();
@@ -84,6 +99,7 @@ const handleFormSubmit = async (event) => {
         const data = await response.json();
         
         emailInput.value = "";
+        checkboxInput.checked = false;
         showPopUp(popSucessProps);
         console.log("Success:", data);
     } catch (error) {

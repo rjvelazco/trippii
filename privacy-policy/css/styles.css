@@ -1,0 +1,87 @@
+/* Dancing Script & Poppins - Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&family=Nunito:wght@800&display=swap');
+
+* {
+    box-sizing: border-box;
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+body {
+    line-height: 1.5;
+    word-break: break-word;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Mulish', 'Nunito', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Nunito', 'Mulish', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem; /* 40px  */
+    font-weight: 800;
+    margin-bottom: 1.25rem ;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.1875rem;
+    font-weight: 800;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+section {
+    margin-bottom: 2.8125rem;
+}
+
+header {
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    width: 100%;
+    background: white;
+}
+
+header .inner-header  {
+    padding: 0.625rem;
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+div.layout__content {
+    padding: 0 1rem;
+    max-width: 1140px;
+    margin-inline: auto;
+}
+
+a {
+    color: #4E3691;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0 0 1.5em 3em;
+}
+
+.row-content {
+    padding: 0.625rem;
+}
+
+.row-content.info {
+    background-color:rgba(247, 247, 249, 1.0);
+}
+
+
+.row-content p {
+    margin-bottom: 1.5rem;
+}
+
+.contact-box {
+    border: #4E3691 1px solid;
+    text-align: center;
+    padding: 3.125rem;
+}

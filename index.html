@@ -49,8 +49,19 @@
                 </label>
                 <input required type="email" id="email" name="email" class="form__input" placeholder="Enter your email">
                 <button type="submit" class="form__button" aria-label="Notify Me">GET EARLY ACCESS</button>
+                <div class="privacy-policity__container">
+                    <input type="checkbox" id="terms" name="terms" class="form__checkbox">
+                    <label for="terms">
+                        I agree to the <a href="./privacy-policy" target="_blank"> Terms of Service and Privacy Policy</a>
+                    </label>
+                </div>
             </form>
         </main>
+
+        <footer>
+            <a href="./privacy-policy">PRIVICAY POLICY</a>
+            <h4>&copy; Trippii LLC</h4>
+        </footer>
     </div>
 
     <div class="pop-up__overlay hidden" id="pop-up-overlay">
@@ -67,8 +78,9 @@
                     on Instagram to stay tuned!
                 </div>
             </div>
-            <div class="pop-up__footer">
-                <a href="https://www.instagram.com/trippiiapp" rel="noopener noreferrer" class="button" aria-label="Follow us on Instagram">Instagram</a>
+            <div class="pop-up__footer" id="instagram-popup">
+                <a href="https://www.instagram.com/trippiiapp" rel="noopener noreferrer" class="button"
+                    aria-label="Follow us on Instagram">Instagram</a>
             </div>
 
         </div>
