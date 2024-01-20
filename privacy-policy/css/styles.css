@@ -53,7 +53,7 @@ header .inner-header  {
 }
 
 div.layout__content {
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     max-width: 1140px;
     margin-inline: auto;
 }
@@ -84,4 +84,15 @@ ul {
     border: #4E3691 1px solid;
     text-align: center;
     padding: 3.125rem;
+}
+
+.page__footer {
+    background-color: rgba(17,17,17,1.0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(109,109,109,1.0);
+    padding: 20px;
+    font-size: 13px;
 }
