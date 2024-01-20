@@ -16,14 +16,15 @@ body {
     font-family: 'Mulish', 'Nunito', sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Nunito', 'Mulish', sans-serif;
 }
 
 h1 {
-    font-size: 2.5rem; /* 40px  */
+    font-size: 2.5rem;
     font-weight: 800;
-    margin-bottom: 1.25rem ;
+    margin-bottom: 1.25rem;
     text-transform: uppercase;
 }
 
@@ -40,17 +41,17 @@ section {
 }
 
 header {
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
     width: 100%;
     background: white;
 }
 
 footer {
     width: 100%;
-    background: rgba(10,10,10,1.0);
+    background: rgba(10, 10, 10, 1.0);
 }
 
-header .inner-header  {
+header .inner-header {
     padding: 0.625rem;
     max-width: 1200px;
     width: 100%;
@@ -64,7 +65,6 @@ header.sticky {
 }
 
 div.layout__content {
-    /* padding: 0 1rem; */
     max-width: 1170px;
     padding: 0 15px;
     margin-inline: auto;
@@ -83,15 +83,36 @@ a img {
     vertical-align: top;
 }
 
-.row-content {
+
+.title-section {
+    padding-top: 1.875rem;
+    max-width: 1200px;
+    margin-bottom: 0;
+    margin-inline: auto;
+}
+
+.title-container {
+    padding: 0 1rem;
+    padding-bottom: 1.5625rem;
+}
+
+.row {
     padding: 0.625rem;
 }
 
-.row-content.info {
-    background-color:rgba(247, 247, 249, 1.0);
+.row.info {
+    background-color: rgba(247, 247, 249, 1.0);
 }
 
-.row-content p {
+.row .row__content {
+    padding-left: 40px
+}
+
+.row .row__content ul {
+    margin-left: 2rem;
+}
+
+.row p {
     margin-bottom: 1.5rem;
 }
 
@@ -118,6 +139,7 @@ a img {
     width: 24%;
     font-size: 14px;
 }
+
 .contact__item .contact__content {
     display: flex;
     flex-direction: column;
@@ -143,6 +165,7 @@ a img {
     margin: 0;
     padding: 0;
 }
+
 .contact__item ul li {
     margin-bottom: 5px;
 }
@@ -153,12 +176,12 @@ a img {
 }
 
 .page__footer {
-    background-color: rgba(17,17,17,1.0);
+    background-color: rgba(17, 17, 17, 1.0);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgba(109,109,109,1.0);
+    color: rgba(109, 109, 109, 1.0);
     padding: 20px;
     font-size: 13px;
 }
@@ -178,9 +201,23 @@ a img {
 
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
     h2 {
         font-size: 25px;
     }
+    
+    header {
+        box-shadow: none;
+    }
+
+    header.sticky {
+        position: static;
+        box-shadow: none;
+    }
+
     .contact__footer {
         flex-direction: column;
         gap: 40px;
@@ -190,8 +227,4 @@ a img {
         min-width: 100%;
     }
 
-    header.sticky {
-        position: static;
-        box-shadow: none;
-    }
 }
