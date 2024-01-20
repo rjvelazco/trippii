@@ -26,6 +26,7 @@ const popUpOverlay = document.querySelector("#pop-up-overlay");
 const popUpTitle = document.querySelector("#pop-up-title");
 const popUpMessage = document.querySelector("#pop-up-message");
 const popUpIcon = document.querySelector("#pop-up-icon");
+const checkboxInput = document.querySelector("#terms");
 
 let popUpTimeoutId;
 
@@ -108,6 +109,14 @@ const handleFormSubmit = async (event) => {
     }
 }
 
+const handleCheckboxInput = () => {
+    const checkboxInput = document.querySelector("#terms");
+    const submitButton = document.querySelector("#submit-btn");
+
+    submitButton.disabled = !checkboxInput.checked;
+}
+
 /* Event Listener */
 form.addEventListener("submit", handleFormSubmit); // Handle the form submission
 popUpOverlay.addEventListener('click', hidePopUpOverlay); // Hide the pop-up when the user clicks on the overlay
+checkboxInput.addEventListener('input', handleCheckboxInput); // Handle the checkbox input
