@@ -45,6 +45,11 @@ header {
     background: white;
 }
 
+footer {
+    width: 100%;
+    background: rgba(10,10,10,1.0);
+}
+
 header .inner-header  {
     padding: 0.625rem;
     max-width: 1200px;
@@ -52,9 +57,16 @@ header .inner-header  {
     margin-inline: auto;
 }
 
+header.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
 div.layout__content {
     /* padding: 0 1rem; */
-    max-width: 1140px;
+    max-width: 1170px;
+    padding: 0 15px;
     margin-inline: auto;
 }
 
@@ -67,6 +79,10 @@ ul {
     margin: 0 0 1.5em 3em;
 }
 
+a img {
+    vertical-align: top;
+}
+
 .row-content {
     padding: 0.625rem;
 }
@@ -75,15 +91,65 @@ ul {
     background-color:rgba(247, 247, 249, 1.0);
 }
 
-
 .row-content p {
     margin-bottom: 1.5rem;
 }
 
 .contact-box {
-    border: #4E3691 1px solid;
+    border: #4E3691 2px solid;
     text-align: center;
     padding: 3.125rem;
+}
+
+.contact__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    max-width: 1200px;
+    padding: 80px 15px;
+    margin: auto;
+}
+
+.contact__item {
+    display: flex;
+    flex-direction: column;
+    min-width: 24%;
+    width: 24%;
+    font-size: 14px;
+}
+.contact__item .contact__content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer__logo,
+.contact__header {
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.contact__item h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 0;
+    letter-spacing: normal;
+}
+
+.contact__item ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.contact__item ul li {
+    margin-bottom: 5px;
+}
+
+.contact__item ul a {
+    color: #d8e1e9;
+    text-decoration: underline;
 }
 
 .page__footer {
@@ -95,4 +161,37 @@ ul {
     color: rgba(109,109,109,1.0);
     padding: 20px;
     font-size: 13px;
+}
+
+@media (max-width: 1024px) {
+    .contact__footer {
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .contact__item {
+        min-width: 45%;
+        max-width: 45%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 25px;
+    }
+    .contact__footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact__item {
+        min-width: 100%;
+    }
+
+    header.sticky {
+        position: static;
+        box-shadow: none;
+    }
 }
