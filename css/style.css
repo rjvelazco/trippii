@@ -1,12 +1,9 @@
-/* Dancing Script & Poppins - Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-family);
+    font-family: 'Poppins', 'Dancing Script', system-ui, -apple-system, sans-serif;
 }
 
 html {
@@ -36,6 +33,27 @@ body {
     height: 100dvh;
     padding: var(--spacing-10) var(--body-padding-x);
     position: relative; /* This is important to make it stand out from the overlay */
+}
+
+a {
+    color: #d0c2f7;
+    text-decoration: none;
+}
+
+footer {
+    padding-top: var(--spacing-6);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    justify-content: center;
+    text-align: center;
+
+    font-size: var(--font-size-xs);
+}
+
+footer h4 {
+    user-select: none;
 }
 
 .layout,
@@ -114,7 +132,7 @@ body {
     width: 100%;
 }
 
-.layout__form input,
+.layout__form input[type="email"],
 .layout__form button {
     align-self: stretch;
     border-radius: var(--spacing-2);
@@ -125,17 +143,17 @@ body {
     padding: var(--spacing-3);
 }
 
-.layout__form input {
-    border: 1px solid var(--primary-color);
+.layout__form input[type="email"] {
+    border: 1px solid transparent;
     color: var(--input-color);
     line-height: 18px;
     text-align: center;
     outline: none;
 }
 
-.layout__form input:focus {
-    border: 1px solid var(--secondary-color-light);
-    box-shadow: var(--input-box-shadow);
+.layout__form input[type="email"]:focus {
+    box-shadow: 10px 10px 10px rgba(237, 236, 236, 0.15);
+    outline: none;
 }
 
 .layout__form button {
@@ -149,6 +167,24 @@ body {
     padding: 0;
 }
 
+.layout__form button:disabled {
+    background: #8078A9;
+    cursor: not-allowed;
+}
+
+.privacy-policity__container {
+    align-items: flex-start;
+    display: flex;
+    width: 100%;
+    font-size: var(--font-size-xs);
+    gap: var(--spacing-2);
+    justify-content: start;
+    line-height: var(--spacing-5);
+    text-align: center;
+    line-height: 14.74px;
+    text-align: start;
+}
+
 .layout__form .sign-up__email {
     display: inline;
 }
@@ -156,6 +192,7 @@ body {
 @media (min-width: 640px) {
     .layout {
         padding: 0;
+        padding-bottom: 1rem;
         margin: auto;
     }
 
@@ -165,11 +202,7 @@ body {
     }
 
     body {
-        padding: var(--spacing-9);
-    }
-
-    .layout {
-        gap: 92px;
+        padding: 0 var(--spacing-9);
     }
 
     .layout__body {
@@ -177,7 +210,7 @@ body {
     }
 
     .layout__header {
-        padding: 0;
+        padding: var(--spacing-9) 0;
     }
 
     .layout__content {
@@ -204,12 +237,11 @@ body {
 
     .layout__form {
         align-self: auto;
-        flex-direction: row;
         max-width: 48rem;
         font-weight: 400;
     }
 
-    .layout__form input {
+    .layout__form input[type="email"] {
         flex: auto;
         padding: var(--spacing-5) var(--spacing-4);
         text-align: left;
